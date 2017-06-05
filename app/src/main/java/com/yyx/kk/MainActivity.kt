@@ -1,29 +1,38 @@
 package com.yyx.kk
 
 import android.content.Intent
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
+import com.yyx.kk.activity.MainsActivity
 import com.yyx.kk.activity.WebViewActivity
+import com.yyx.kk.framework.ActivityBase
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ActivityBase(){
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        tv.text = "Hello，欢迎来到小心Android至Kotlin"
+
+    override fun initViewsAndStaticData() {
 
         web_view.setOnClickListener{
-            toast("跳转页面")
             val intent = Intent(this,WebViewActivity::class.java)
+            startActivity(intent)
+        }
+        web_main.setOnClickListener{
+
+            val intent = Intent(this, MainsActivity::class.java)
             startActivity(intent)
         }
     }
 
 
-
-    fun toast(va:String){
-        Toast.makeText(this,va, Toast.LENGTH_LONG).show()
+    override fun initLayoutViews(): Int {
+        return R.layout.activity_main
     }
+
+
+
+
+
+
+
 }
+
+

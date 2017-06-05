@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 底部选项卡 文字样式.-->
+    <color name="bottomTab_text_normal">#999</color>
+    <color name="bottomTab_text_selected">#42bd56</color>
+
 </resources>

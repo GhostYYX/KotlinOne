@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部标题的字体大小-->
+    <dimen name="bottomTab_textSize">10sp</dimen>
+    <!-- 底部选项.图标高度-->
+    <dimen name="bottomTab_iconHeight">26dp</dimen>
+    <!-- 底部选项.图标宽度-->
+    <dimen name="bottomTab_iconWidth">26dp</dimen>
+
+</resources>
